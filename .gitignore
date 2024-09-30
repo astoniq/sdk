@@ -1,0 +1,32 @@
+node_modules
+/.pnp
+.pnp.js
+.pnpm-store
+
+# testing
+/tooling/**/coverage
+
+# report
+/report.json
+/tooling/**/report.json
+
+# production
+/tooling/**/build
+/tooling/**/lib
+/tooling/**/dist
+
+# logs
+logs
+*.log*
+
+# misc
+cache
+.*cache
+.DS_Store
+*.env
+.env
+.idea/
+*.pem
+.history
+fly.toml
+dump.rdb

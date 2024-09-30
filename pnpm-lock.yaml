@@ -1,0 +1,92 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      typescript:
+        specifier: ^5.0.0
+        version: 5.6.2
+
+  tooling/codegen:
+    dependencies:
+      '@astoniq/sdk-jtd-utils':
+        specifier: workspace:*
+        version: link:../jtd-utils
+      '@astoniq/sdk-schema':
+        specifier: workspace:*
+        version: link:../schema
+    devDependencies:
+      '@types/node':
+        specifier: ^20.0.0
+        version: 20.16.10
+
+  tooling/jtd-utils:
+    devDependencies:
+      '@types/node':
+        specifier: ^20.0.0
+        version: 20.16.10
+
+  tooling/schema:
+    dependencies:
+      '@astoniq/sdk-jtd-utils':
+        specifier: workspace:*
+        version: link:../jtd-utils
+    devDependencies:
+      '@types/node':
+        specifier: ^20.0.0
+        version: 20.16.10
+
+  tooling/ts-codegen:
+    dependencies:
+      '@astoniq/sdk-codegen':
+        specifier: workspace:*
+        version: link:../codegen
+      '@astoniq/sdk-jtd-utils':
+        specifier: workspace:*
+        version: link:../jtd-utils
+      '@astoniq/sdk-schema':
+        specifier: workspace:*
+        version: link:../schema
+      prettier:
+        specifier: ^3.3.3
+        version: 3.3.3
+      scule:
+        specifier: ^1.3.0
+        version: 1.3.0
+    devDependencies:
+      '@types/node':
+        specifier: ^20.0.0
+        version: 20.16.10
+
+packages:
+
+  /@types/node@20.16.10:
+    resolution: {integrity: sha512-vQUKgWTjEIRFCvK6CyriPH3MZYiYlNy0fKiEYHWbcoWLEgs4opurGGKlebrTLqdSMIbXImH6XExNiIyNUv3WpA==}
+    dependencies:
+      undici-types: 6.19.8
+    dev: true
+
+  /prettier@3.3.3:
+    resolution: {integrity: sha512-i2tDNA0O5IrMO757lfrdQZCc2jPNDVntV0m/+4whiDfWaTKfMNgR7Qz0NAeGz/nRqF4m5/6CLzbP4/liHt12Ew==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: false
+
+  /scule@1.3.0:
+    resolution: {integrity: sha512-6FtHJEvt+pVMIB9IBY+IcCJ6Z5f1iQnytgyfKMhDKgmzYG+TeH/wx1y3l27rshSbLiSanrR9ffZDrEsmjlQF2g==}
+    dev: false
+
+  /typescript@5.6.2:
+    resolution: {integrity: sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true
+
+  /undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
+    dev: true
